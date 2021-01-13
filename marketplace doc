@@ -1,0 +1,67 @@
+
+http://127.0.0.1:8000/user/register/---Post
+
+----------------------Post request Field need--------------
+
+
+{
+	"username":"rakesh",
+	"password":"rakeshkashyap",
+	"password2":"rakeshkashyap",
+	"email":"rakesh@gmail.com",
+	"first_name":"rakesh",
+	"last_name":"kashyap"
+	
+}
+
+
+---------------------output-------------
+
+{
+	"username":"rakesh",
+	"password":"rakeshkashyap",
+	"password2":"rakeshkashyap",
+	"email":"rakesh@gmail.com",
+	"first_name":"rakesh",
+	"last_name":"kashyap"
+	
+}
+=============================================================
+          http://127.0.0.1:8000/user/login/  
+
+------------Post request Field need-------------
+
+{
+	"email":"rakesh@gmail.com",
+	"password":"rakeshkashyap"
+}
+
+-----------------------out put----------
+
+{
+    "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYxMDYyOTY4NiwianRpIjoiMzQ3MWNkMWU4M2U4NGJhZGFhNmJmOTk1ZjkxMGNkYzEiLCJ1c2VyX2lkIjo2LCJ1c2VybmFtZSI6InJha2VzaCJ9.g48yGS3gqy7kdPmWKqAKcgR6kEDQfrW1f7qDyJEGuT4",
+    "access": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjEwNTQzNTg2LCJqdGkiOiJkZGYwZmRlNTdkYmY0Mjk5ODAyMTY3MzgwNWQ3YmQzOSIsInVzZXJfaWQiOjYsInVzZXJuYW1lIjoicmFrZXNoIn0.APEzrpwWYAWoDg9qsJvmX_4spXvOaR9MJgJ-r-3AC1E"
+}
+
+==============================================================
+http://127.0.0.1:8000/user/login/refresh/ 
+ --------------------------------------refresh token need----------------
+ 
+ {
+	"refresh":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYxMDYyOTY4NiwianRpIjoiMzQ3MWNkMWU4M2U4NGJhZGFhNmJmOTk1ZjkxMGNkYzEiLCJ1c2VyX2lkIjo2LCJ1c2VybmFtZSI6InJha2VzaCJ9.g48yGS3gqy7kdPmWKqAKcgR6kEDQfrW1f7qDyJEGuT4"
+}
+
+----------------out put--------
+
+
+{
+    	"access":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjEwNTQzOTYxLCJqdGkiOiJiYWFlYmZiYjc3MjA0MDU0YmNmNzA4NWQ3YWVmNmRkMCIsInVzZXJfaWQiOjYsInVzZXJuYW1lIjoicmFrZXNoIn0.HhvHu2t564gxIqJeQaaEpYMnOgQOw_-0uWJQa9oYERo"
+}
+-----------------------------
+o
+
+
+
+
+
+   
